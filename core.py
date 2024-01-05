@@ -1,9 +1,7 @@
-from random import choice
+from random import choice, randrange
 from time import sleep
 
 items = ['apple', 'pear', 'metal', 'slime']
-time_2 = range(10)
-
 while True:
     print(choice(items))
-    sleep(choice(time_2))
+    sleep(randrange(10))
