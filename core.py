@@ -4,4 +4,7 @@ from time import sleep
 items = ['apple', 'pear', 'metal', 'slime']
 while True:
     print(choice(items))
-    sleep(randrange(10))
+    for _ in range(randrange(10)):
+        print('.', end='')
+        sleep(1)
+    print()
